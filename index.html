@@ -1,0 +1,75 @@
+<!DOCTYPE htmL>
+<html Lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="C:\Users\Mazlum\Desktop\Bitirme projesi\login\style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="register()">Register</button>
+      </div>
+      <div class="social-icons">
+        <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_skwgamub.json" mode="bounce"
+          background="transparent" speed="1" loop autoplay></lottie-player>
+
+
+      </div>
+
+      <div>
+        <form id="Login" class="input-group">
+          <input type="text" class="input-field" placeholder="Telefon numarası,kullanıcı adı veya e-posta" required>
+          <input type="password" class="input-field" placeholder="Şifre" required>
+          <a href="#">Şifreni mi unuttun?</a>
+          <button type="submit" class="submit-btn">Login</button>
+        </form>
+
+        <form id="Register" class="input-group">
+          <input type="text" class="input-field" placeholder="Telefon numarası,kullanıcı adı veya e-posta" required>
+          <input type="password" class="input-field" placeholder="Şifre" required>
+          <input type="email" class="input-field" placeholder="E-posta giriş" required>
+          <a href="#">Kaydolarak, Koşullarımızı, Gizlilik İlkemizi ve Çerezler İlkemizi kabul etmiş olursun.
+
+          </a>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+
+
+
+      </div>
+    </div>
+  </div>
+  <script>
+    var x = document.getElementById("Login"); /* x=login y=register z=button */
+    var y = document.getElementById("Register");
+    var z = document.getElementById("btn")
+    function register() {
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+
+    function login() {
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0px";
+    }
+
+  </script>
+
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</body>
+
+</html>
