@@ -146,3 +146,23 @@ font-size: 15px;
 #Register{
     left: 450px;
 }
+
+.container{
+    border: 1px solid #a12c2c;
+    overflow: hidden;
+    width: 100%;
+
+}
+.left{
+    height: 800px;
+    width: 50%;
+    float: left;
+    background-color:#c7a339;
+}
+.right{
+    width: 50%;
+    float: right;
+    background-color:#66FF33;
+    height: 800px;
+}
+
